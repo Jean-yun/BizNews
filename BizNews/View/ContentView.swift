@@ -15,7 +15,10 @@ struct ContentView: View {
         NavigationView {
             List(networkManager.posts) {post in
                 NavigationLink(destination: DetailView(url: post.url)) {
-                    Text(post.title)
+                    HStack {
+                        Text(post.title)
+                        Image(post.urlToImage ?? "")
+                    }
                 }
             }
             .navigationTitle("BizNews")
