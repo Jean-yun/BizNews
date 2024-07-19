@@ -17,7 +17,6 @@ struct ContentView: View {
                 NavigationLink(destination: DetailView(url: post.url)) {
                     HStack {
                         Text(post.title)
-                        Image(post.urlToImage ?? "")
                     }
                 }
             }

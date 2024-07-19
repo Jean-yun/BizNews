@@ -16,6 +16,5 @@ struct Post: Decodable, Identifiable {
     let title: String
     let author: String
     let url: String
-    let urlToImage: String?
     
 }
